@@ -19,7 +19,6 @@ define Package/$(PKG_NAME)
 	URL:=https://github.com/liuzhuoling2011/baidupcs-web
 endef
 
-
 define Package/$(PKG_NAME)/description
 baidupcs-web is a web controller for BaiduPCS-Go
 endef
@@ -29,6 +28,7 @@ BAIDUPCS-WEB_BIN:=BaiduPCS-Go
 ifeq ($(ARCH),x86_64)
 	PKG_ARCH_BAIDUPCS-WEB:=x86_64
 endif
+
 ifeq ($(ARCH),mipsel)
 	PKG_ARCH_BAIDUPCS-WEB:=mipsel
 endif
@@ -36,6 +36,7 @@ endif
 ifeq ($(ARCH),i386)
 	PKG_ARCH_BAIDUPCS-WEB:=i386
 endif
+
 ifeq ($(ARCH),arm)
 	PKG_ARCH_BAIDUPCS-WEB:=arm
 endif
